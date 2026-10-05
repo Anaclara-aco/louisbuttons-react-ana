@@ -1,0 +1,62 @@
+/* Ajustes da Landing (carregado por último, complementa os CSS do grupo) */
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 100px; }
+
+.header { position: sticky; top: 0; }
+.header .marca {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--brand-primary);
+    letter-spacing: -0.01em;
+    text-decoration: none;
+}
+
+.icon-with-badge { position: relative; display: flex; }
+.badge-count {
+    position: absolute; top: -8px; right: -10px;
+    width: 16px; height: 16px; border-radius: 50%;
+    background-color: var(--brand-accent); color: #FFFFFF;
+    font-size: 0.65rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.product-card .card-img-top { height: 350px; object-fit: cover; }
+.secao-alt { background-color: var(--bg-surface); }
+.filtros .form-check-input:checked {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.chamada-final {
+    background-color: var(--brand-primary);
+    color: var(--text-on-dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+.chamada-final .sub-title {
+    display: block; font-size: 0.85rem; text-transform: uppercase;
+    letter-spacing: 3px; color: var(--border-light); margin-bottom: 1rem;
+}
+.chamada-final h2 { font-family: 'Playfair Display', serif; font-size: 2.1rem; margin-bottom: 0.75rem; }
+.chamada-final p { color: rgba(250, 247, 242, 0.8); margin-bottom: 2rem; }
+
+.rodape { background-color: var(--text-main); color: var(--text-on-dark); padding: 3rem 0 1.5rem; }
+.rodape .marca-rodape { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 1rem; }
+.rodape a { color: var(--border-light); text-decoration: none; }
+.rodape a:hover { color: #FFFFFF; }
+
+@media (max-width: 992px) {
+    .header .marca { font-size: 1.5rem; }
+    .nav-links:not(.aberto) { display: none; }
+}
+@media (max-width: 576px) {
+    .hero-title { font-size: 2.2rem; }
+}
+
+.selo-destaque {
+    position: absolute; top: 12px; left: 12px;
+    background-color: var(--brand-primary); color: var(--text-on-dark);
+    font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+    padding: 4px 10px; border-radius: var(--radius-sm);
+}
